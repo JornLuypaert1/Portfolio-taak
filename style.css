@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+/* navbar */
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+
+}
+
+.navbar {
+    position: fixed;
+    background: whitesmoke;
+    width: 100%;
+    padding: 15px 0;
+
+
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar .navigatie li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .navigatie li a {
+    color: black;
+    font-weight: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+
+}
+
+.navbar .name a {
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+
+
+
+}
+
+/* home styling */
+
+.home {
+    display: flex;
+    height: 100vh;
+    color: white;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    min-height: 500px;
+
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+
+}
+
+.home .home-content .zin-1 {
+    font-size: 27px;
+}
+
+
+
+.home .home-content .zin-2 {
+    font-size: 72px;
+    font-weight: 500;
+    margin-left: -4px;
+
+}
+
+.home .home-content .zin-3 {
+    font-size: 40px;
+    margin: 5px 0;
+
+}
+
+.resize {
+    width: 600px;
+    height: auto;
+}
+
+.resize {
+    width: 500px;
+    height: auto;
+}
+
+.profilepicture {
+    justify-content: right;
+    padding-top: 18%;
+
+}
