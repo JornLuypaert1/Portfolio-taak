@@ -7,35 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="stylesheet" href="https://use.typekit.net/scg1qqr.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/b247d14d09.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <nav class="navbar">
         <div class="max-width">
             <div class="name"><a href="#">Jorn <span>Luypaert</span></a></div>
-            <ul class="navigatie">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Where am i from</a></li>
-                <li><a href="#"></a>Hobby's</li>
-                <li><a href="#"></a>Intresest</li>
-            </ul>
-            </ul>
-        </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navigatie" id="navbar">
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobby">Hobby's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
+                </ul>
+            </div>
     </nav>
     <!-- home -->
     <section class="home" id="Home">
         <div class="max-width">
             <div class="home-content">
-                <div class="zin-1">Hallo, Ik ben</div>
+                <div class="zin-1">Hallo, mijn naam is</div>
                 <div class="zin-2">Jorn Luypaert!</div>
-                <div class="zin-3">Student Multimedia <span>and Creative technologies!</span> </div>
+                <div class="zin-3">Student Multimedia <span>and Creative Technologies!</span> </div>
+            </div>
+            <div>
+                <button class="button">Learn More!</button>
             </div>
         </div>
         <div class="profilepicture">
             <img class="resize" src="img/jornStock.jpg" alt="">
         </div>
     </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img class="resize" src="img/jorn2.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">
+                        Mijn naam is <span>Jorn Luypaert</span>
+                    </div>
+                    <p>Mijn naam is Jorn Luypaert, ik ben een 18 jarige student uit Grimbergen. Ik heb mijn secundair
+                        onderwijs gedaan in TSM te Mechelen, daar heb ik Multimedia gestudeerd. Mijn intresses liggen in
+                        3D-animatie en geschiedenis.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- Hobby's -->
+        <section class="hobby" id="hobby">
+            <div class="max-width">
+                <h2 class="title">Hobby's</h2>
+                <div class="hobby-content">
+                    <div class="colum left">
+                        <p>In mijn vrije tijd ben ik vooral bezig met voetbal, ik speel en geef zelf ook training.
+                            Daarnaast spendeer ik veel tijd met mijn vrienden, daarmee ga ik graag is iets drinken of
+                            eten. Ik ben ook bezig met zelf tattoo's te ontwerpen op papier. </p>
+                    </div>
+                    <div class="column right">
+                        <img class="resize" src="img/jorn3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact" id="contact">
+
+        </div>
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="subject">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>Jorn Luypaert</h3>
+                <p>Heel erg bedankt om mijn website te checken, ik hoop dat je hierdoor mij wat beter kent! Check zeker
+                    mijn sociale media!</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/profile.php?id=100005341547156"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/jorn.luypaert/"><i
+                                class="fa-brands fa-instagram-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright 2021, designed by <span>Jorn Luypaert</span> </p>
+            </div>
+        </footer>
 
 </body>
 

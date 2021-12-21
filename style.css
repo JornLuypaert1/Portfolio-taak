@@ -7,6 +7,8 @@
 }
 
 /* navbar */
+
+
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -16,12 +18,13 @@
 
 .navbar {
     position: fixed;
-    background: whitesmoke;
     width: 100%;
     padding: 15px 0;
 
 
 }
+
+
 
 .navbar .max-width {
     display: flex;
@@ -40,6 +43,7 @@
     font-weight: 18px;
     font-weight: 500;
     margin-left: 30px;
+    font-family: Degular Regular, sans-serif;
 
 }
 
@@ -47,9 +51,15 @@
     color: black;
     font-size: 40px;
     font-weight: 500;
+    font-family: Degular Bold, sans-serif;
 
 
 
+}
+
+.name span {
+    color: #e04226;
+    font-family: Degular Bold, sans-serif;
 }
 
 /* home styling */
@@ -57,8 +67,7 @@
 .home {
     display: flex;
     height: 100vh;
-    color: white;
-    background-image: url(img/banner.jpg);
+    color: black;
     background-size: cover;
     min-height: 500px;
 
@@ -71,6 +80,7 @@
 
 .home .home-content .zin-1 {
     font-size: 27px;
+    font-family: Degular Regular, sans-serif;
 }
 
 
@@ -79,12 +89,88 @@
     font-size: 72px;
     font-weight: 500;
     margin-left: -4px;
+    font-family: Degular Regular, sans-serif;
 
 }
 
 .home .home-content .zin-3 {
     font-size: 40px;
     margin: 5px 0;
+    font-family: Degular Regular, sans-serif;
+
+}
+
+.resize {
+    width: 600px;
+    height: auto;
+    border-radius: 36% 46% 25% 58% / 37% 27% 55% 34%;
+}
+
+.resize {
+    width: 500px;
+    height: auto;
+    border-radius: 36% 46% 25% 58% / 37% 27% 55% 34%;
+}
+
+.profilepicture {
+    justify-content: right;
+    padding-top: 18%;
+
+}
+
+.button {
+    color: white;
+    display: inline-block;
+    background-color: black;
+    padding: 15px 23px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    font-family: Degular Regular, sans-serif;
+
+}
+
+/*about */
+.section {
+    padding: 100px 0px;
+}
+
+.about .title {
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    text-decoration: underline;
+    font-family: Degular Bold, sans-serif;
+}
+
+
+
+.about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Degular Regular, sans-serif;
+
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+
+
+.about .about-content .left img .resize {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
 
 }
 
@@ -98,8 +184,251 @@
     height: auto;
 }
 
-.profilepicture {
-    justify-content: right;
-    padding-top: 18%;
 
+.about .about-content .right {
+    width: 55%;
+}
+
+
+.about .about-content .right .text {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: Degular Regular, sans-serif;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+    font-family: Degular Bold, sans-serif;
+}
+
+.about .about-content .right .text p {
+    text-align: justify;
+    font-family: Degular Regular, sans-serif;
+}
+
+
+.about .about-content .column {
+    width: 50%;
+}
+
+
+/*hobby's */
+
+.hobby .title {
+    position: relative;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    text-decoration: underline;
+    font-family: Degular bold, sans-serif;
+}
+
+
+
+.hobby .hobby-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Degular Regular, sans-serif;
+
+}
+
+
+.hobby .hobby-content .right {
+    width: 45%;
+}
+
+
+
+.hobby .hobby-content .right img .resize {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.hobby .hobby-content .left {
+    width: 55%;
+}
+
+
+.hobby .hobby-content .left .text {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.hobby .hobby-content .left .text p {
+    text-align: justify;
+    font-family: Degular Regular, sans-serif;
+}
+
+
+
+
+/*contact */
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Degular Regular, sans-serif;
+    justify-content: center;
+}
+
+
+input[type=submit] {
+    background-color: #e04226;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Degular Regular, sans-serif;
+}
+
+
+input[type=submit]:hover {
+    background-color: #e04226;
+}
+
+
+.contact {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    font-family: Degular Regular, sans-serif;
+}
+
+
+/*footer */
+
+
+.footer {
+    position: absolute;
+    background: whitesmoke;
+    height: auto;
+    width: 100px;
+    font-family: Degular Regular, sans-serif;
+    padding-top: 40px;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    font-family: Degular Bold, sans-serif;
+}
+
+.footer-content p {
+
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28Px;
+    font-size: 14px;
+    font-family: Degular Regualar, sans-serif;
+
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: #e04226;
+}
+
+.footer-bottom {
+    background: whitesmoke;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Degular Regualar, sans-serif;
+
+
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .7;
+    font-weight: 200;
+
+}
+
+/*media query's */
+
+@media (max-width: 1024px) {
+    .about {
+        width: 100%;
+
+    }
+
+    img.jornStock {
+        margin-top: 100px;
+    }
+
+    img.jorn2 {
+        margin-top: 100px;
+    }
+
+
+    img.jorn3 {
+        margin-top: 100px;
+    }
 }
